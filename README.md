@@ -182,7 +182,7 @@ python -m app
 
 Access the application in your web browser:
 ```arduino
-http://127.0.0.1:8050/ or [local.](http://localhost:8050/)
+http://127.0.0.1:8050/ or http://localhost:8050/
 ```
 
 ## Usage
