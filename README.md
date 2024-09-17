@@ -203,4 +203,5 @@ This project was developed as part of job interview task and a learning experien
 * Building interactive web UIs with Dash and Plotly
 * Integrating Python with PostgreSQL
 * Working with JavaScript and CSS
+* Deploying production code with Docker
 
