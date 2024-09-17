@@ -1,0 +1,29 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8050:8050"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password12345@db:5432/sensor_data
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+      - ./logs:/app/logs  # <-- Mounts your local logs directory inside the container
+    restart: unless-stopped
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password12345
+      POSTGRES_DB: sensor_data
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  db_data:
