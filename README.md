@@ -205,3 +205,11 @@ This project was developed as part of job interview task and a learning experien
 * Working with JavaScript and CSS
 * Deploying production code with Docker
 
+## License
+The contents of the repository are licensed under a [MIT License][MIT].
+
+[![MIT License][MIT-shield]][MIT]
+
+[MIT]: https://opensource.org/license/mit
+[MIT-shield]: https://img.shields.io/badge/license-MIT-blue.svg
+
